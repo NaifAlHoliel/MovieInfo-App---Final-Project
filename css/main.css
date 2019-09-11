@@ -1,0 +1,304 @@
+body{
+  font-family: 'Alegreya SC', serif;
+}
+
+h3{
+
+  color:#B3B2B2;
+
+}
+
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+header
+{
+  width: 100%;
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+footer
+{
+
+   width: 100%;
+   height: 100px;
+   background:  rgb(206, 203, 197);
+   bottom: -300px;
+   position: fixed;
+   z-index: -1;
+
+}
+
+.content1
+{
+  height: 1000px;
+  min-height: 1000px;
+  background: black;
+  position: relative;
+  z-index: 1;
+
+}
+
+.wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 150px;
+  color: #fff;
+}
+
+header h1{}
+
+.content h1{
+  line-height: 1000px;
+  color: #999;
+}
+
+footer h1
+{
+  line-height: 300px;
+}
+
+header,
+footer,
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+/* mycode */
+
+
+
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+}
+
+main{
+  background: black;
+}
+
+
+.container,
+.jumbotron{
+
+  margin: 10px;
+position: relative;
+display: block;
+text-align: center;
+margin-left: 3%;
+margin-right: auto;
+background: black;
+}
+
+.header{
+
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+.headerr{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.headerr span{
+
+  position: relative;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 10px;
+  animation: animate 3s linear infinite;
+
+
+
+
+
+}
+@keyframes animate
+ {
+  0%
+
+{
+
+filter: blur(0);
+}
+ 40%
+
+{
+
+filter: blur(20px);
+}
+ 80%
+
+{
+
+filter: blur(0);
+}
+ 100%
+
+{
+
+filter: blur(0);
+}
+}
+
+
+.contain{
+
+  width: 1280px;
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+  margin-right: 3%;
+  margin-top: 10px;
+
+
+}
+
+.contain .box{
+position: relative;
+  width: 300px;
+  height: 300px;
+  background: #ff0;
+margin: 10px;
+box-sizing: border-box;
+display: inline-block;
+
+}
+
+.contain .box .imgBox{
+
+position: relative;
+
+}
+.contain .box .imgBox img{
+
+max-width: 100%;
+transition: transform 2s;
+}
+
+.contain .box:hover .imgBox img{
+
+transform: scale(1.2);
+
+
+}
+
+
+.contain .box  .details {
+
+position: absolute;
+max-height: 100%;
+top: 10px;
+bottom: 10px;
+left: 10px;
+right: 10px;
+background: rgba(0,0,0,.8);
+transform: scaleY(0);
+transition: transform .5s;
+}
+
+.contain .box:hover  .details {
+  transform: scaleY(1);
+
+
+
+}
+.contain .box  .details .content{
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 90px;
+  color: #fff;
+}
+
+.bb{
+  background: red;
+}
+
+.last-navbar{
+  font-family: 'Alegreya SC', serif;
+ font-size: 15px;
+ text-align: center;
+ color: black;
+ margin-top: 40px;
+
+
+}
+
+.topp{
+
+  text-align: center;
+  font-size: 25px;
+  color:#B3B2B2;
+}
